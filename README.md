@@ -1,5 +1,4 @@
 # VisualGlowEffect
-https://github.com/text21/VisualGlowEffect
 ---
 This is a flexible and user-friendly Lua module created for implementing glowing and pulsing effects on `Frame` and `ImageLabel` UI elements in Roblox. The module allows you to apply visually striking glow effects that expand and fade over time. You can fully customize settings such as color, transparency, and the number of repetitions to achieve the desired look.
 
