@@ -10,8 +10,7 @@ It is designed to be highly adaptable for various projects and aims to simplify 
 
 ---
 # Preview
-![Preview|video](upload://zThH4KAqnfwVKBMKbCQq5ZM8BU1.mp4)
-
+https://github.com/user-attachments/assets/f07e40ce-4636-47d1-9611-690c346b22e6
 ---
 ## Features
 - **Supports Frames and ImageLabels**: The module works seamlessly with both `Frame` and `ImageLabel` UI elements.
