@@ -24,6 +24,8 @@ local GlowEffect = require(game.ReplicatedStorage.GlowEffectModule)
 You can apply the glow effect to any Frame or ImageLabel UI element using the ApplyGlowEffect function. Here's how:
 ```lua
 local GlowEffect = require(game.ReplicatedStorage.GlowEffectModule)
+local myFrame = script.Parent.MYFrame
+local ImageLabel = script.Parent.ImageLabel
 
 -- Apply the effect to a Frame
 GlowEffect.ApplyGlowEffect(myFrame, {
