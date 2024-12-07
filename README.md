@@ -1,4 +1,4 @@
-# GlowEffectModule
+# VisualGlowEffect
 
 A flexible, easy-to-use Lua module for creating glowing and pulsing effects on `Frame` and `ImageLabel` UI elements in Roblox. This module enables you to apply a visually appealing glow effect that grows and fades over time, with customizable settings such as color, transparency, and number of repetitions.
 
@@ -17,13 +17,13 @@ To use this module, you can simply add it to `ReplicatedStorage` or any other se
 Once added, you can easily require the module in your scripts like so:
 
 ```lua
-local GlowEffect = require(game.ReplicatedStorage.GlowEffectModule)
+local GlowEffect = require(game.ReplicatedStorage.VisualGlowEffect)
 ```
 
 ## Usage
 You can apply the glow effect to any Frame or ImageLabel UI element using the ApplyGlowEffect function. Here's how:
 ```lua
-local GlowEffect = require(game.ReplicatedStorage.GlowEffectModule)
+local GlowEffect = require(game.ReplicatedStorage.VisualGlowEffect)
 local myFrame = script.Parent.MYFrame
 local ImageLabel = script.Parent.ImageLabel
 
