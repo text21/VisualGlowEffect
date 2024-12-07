@@ -1,20 +1,24 @@
 # VisualGlowEffect
+---
+A flexible, easy-to-use Lua module designed for creating glowing and pulsing effects on `Frame` and `ImageLabel` UI elements in Roblox. This module lets you apply visually stunning glow effects that expand and fade over time, with fully customizable settings like colour, transparency, and repetition count.
 
-A flexible, easy-to-use Lua module for creating glowing and pulsing effects on `Frame` and `ImageLabel` UI elements in Roblox. This module enables you to apply a visually appealing glow effect that grows and fades over time, with customizable settings such as color, transparency, and number of repetitions.
+I developed this to streamline the process, eliminating the need to repeatedly create these effects from scratch. With this module, you can quickly implement these effects for `Frame` or `ImageLabel` elements, saving time and effort.
 
+It’s built to be highly adaptable for various projects and aims to simplify your workflow. I plan to roll out updates regularly, potentially adding more tweens, modules, and features to enhance its functionality.
+
+**Note:** If you encounter any issues or bugs, please don't hesitate to reach out for assistance. I'll address them promptly. Thank you, and enjoy using the module!
 
 https://github.com/user-attachments/assets/70754d45-5aa5-4fb3-9027-37a90ebaa9e6
-
-
+---
 ## Features
-
 - **Supports Frames and ImageLabels**: The module works seamlessly with both `Frame` and `ImageLabel` UI elements.
 - **Customizable Glow**: Adjust the color, transparency, and size of the glow effect.
 - **Looping Support**: Control the number of times the effect should repeat, or loop infinitely.
 - **Flexible**: Easily reusable in any UI, and can be applied to multiple elements with just a single line of code.
 - **Disappearing Effect**: The UI element disappears after each cycle, and then reappears to continue the effect.
-
+---
 ## Installation
+[VisualGlowEffect.rbxm|attachment](upload://iCXhCssphP9J826omq03nFvM4z6.rbxm) (6.5 KB)
 
 To use this module, you can simply add it to `ReplicatedStorage` or any other service where you prefer storing modules in your Roblox game. 
 
@@ -23,7 +27,7 @@ Once added, you can easily require the module in your scripts like so:
 ```lua
 local GlowEffect = require(game.ReplicatedStorage.VisualGlowEffect)
 ```
-
+---
 ## Usage
 You can apply the glow effect to any Frame or ImageLabel UI element using the ApplyGlowEffect function. Here's how:
 ```lua
@@ -55,6 +59,7 @@ GlowEffect.ApplyGlowEffect(myImageLabel, {
     MaxTransparency = 1
 })
 ```
+---
 ## Configuration Options
 
 Here are the available configuration options you can modify when applying the glow effect:
@@ -68,6 +73,7 @@ Here are the available configuration options you can modify when applying the gl
 - MinTransparency (default: 0.3): The minimum transparency of the element during the glow effect.
 - MaxTransparency (default: 1): The maximum transparency during the fading part of the effect.
 ```
+---
 ## Example Use Case
 If you want a Frame to pulse with a white glow that grows larger, fades out, disappears, and then comes back for a total of 5 cycles, you would use:
 ```lua
@@ -82,7 +88,7 @@ GlowEffect.ApplyGlowEffect(myFrame, {
     MaxTransparency = 0.7
 })
 ```
-
+---
 ## Notes
 - The glow effect will automatically reset the element's original properties (size, transparency, color) after each cycle.
 - The `RepeatCount` parameter allows you to control how many times the effect will loop. If set to `-1`, the effect will loop indefinitely.
