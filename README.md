@@ -2,6 +2,10 @@
 
 A flexible, easy-to-use Lua module for creating glowing and pulsing effects on `Frame` and `ImageLabel` UI elements in Roblox. This module enables you to apply a visually appealing glow effect that grows and fades over time, with customizable settings such as color, transparency, and number of repetitions.
 
+
+https://github.com/user-attachments/assets/70754d45-5aa5-4fb3-9027-37a90ebaa9e6
+
+
 ## Features
 
 - **Supports Frames and ImageLabels**: The module works seamlessly with both `Frame` and `ImageLabel` UI elements.
