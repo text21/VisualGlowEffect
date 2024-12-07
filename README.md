@@ -20,8 +20,6 @@ https://github.com/user-attachments/assets/f07e40ce-4636-47d1-9611-690c346b22e6
 - **Disappearing Effect**: The UI element disappears after each cycle, and then reappears to continue the effect.
 ---
 ## Installation
-[VisualGlowEffect.rbxm|attachment](upload://iCXhCssphP9J826omq03nFvM4z6.rbxm) (6.5 KB)
-
 To use this module, you can simply add it to `ReplicatedStorage` or any other service where you prefer storing modules in your Roblox game. 
 
 Once added, you can easily require the module in your scripts like so:
