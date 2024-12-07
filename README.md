@@ -18,9 +18,11 @@ Once added, you can easily require the module in your scripts like so:
 
 ```lua
 local GlowEffect = require(game.ReplicatedStorage.GlowEffectModule)
+```
 
 ## Usage
 You can apply the glow effect to any Frame or ImageLabel UI element using the ApplyGlowEffect function. Here's how:
+```lua
 local GlowEffect = require(game.ReplicatedStorage.GlowEffectModule)
 
 -- Apply the effect to a Frame
