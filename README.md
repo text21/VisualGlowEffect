@@ -1,14 +1,18 @@
 # VisualGlowEffect
+https://github.com/text21/VisualGlowEffect
 ---
-A flexible, easy-to-use Lua module designed for creating glowing and pulsing effects on `Frame` and `ImageLabel` UI elements in Roblox. This module lets you apply visually stunning glow effects that expand and fade over time, with fully customizable settings like colour, transparency, and repetition count.
+This is a flexible and user-friendly Lua module created for implementing glowing and pulsing effects on `Frame` and `ImageLabel` UI elements in Roblox. The module allows you to apply visually striking glow effects that expand and fade over time. You can fully customize settings such as color, transparency, and the number of repetitions to achieve the desired look.
 
-I developed this to streamline the process, eliminating the need to repeatedly create these effects from scratch. With this module, you can quickly implement these effects for `Frame` or `ImageLabel` elements, saving time and effort.
+I developed this module to make it easier for people by eliminating the need to repeatedly create these effects from scratch. With this tool, you can quickly implement these effects for `Frame` or `ImageLabel` elements, saving time and effort.
 
-It’s built to be highly adaptable for various projects and aims to simplify your workflow. I plan to roll out updates regularly, potentially adding more tweens, modules, and features to enhance its functionality.
+It is designed to be highly adaptable for various projects and aims to simplify your workflow. I plan to release regular updates, which may include additional tweens, modules, and features to enhance its functionality.
 
-**Note:** If you encounter any issues or bugs, please don't hesitate to reach out for assistance. I'll address them promptly. Thank you, and enjoy using the module!
+**Note:** If you encounter any issues or bugs, please feel free to reach out for assistance. I will address them promptly. Thank you, and enjoy using the module!
 
-https://github.com/user-attachments/assets/70754d45-5aa5-4fb3-9027-37a90ebaa9e6
+---
+# Preview
+![Preview|video](upload://zThH4KAqnfwVKBMKbCQq5ZM8BU1.mp4)
+
 ---
 ## Features
 - **Supports Frames and ImageLabels**: The module works seamlessly with both `Frame` and `ImageLabel` UI elements.
@@ -94,9 +98,13 @@ GlowEffect.ApplyGlowEffect(myFrame, {
 - The `RepeatCount` parameter allows you to control how many times the effect will loop. If set to `-1`, the effect will loop indefinitely.
 - If you have multiple elements that need the effect, you can easily reuse the ApplyGlowEffect function for each element.
 - If you have multiple elements that need the effect, you can easily reuse the `ApplyGlowEffect` function for each element.
+---
 
 ## Contribution
 Feel free to fork this project and submit issues or pull requests if you'd like to contribute to the module. If you have any suggestions or find any bugs, please let me know!
 
+---
 ## License
 This project is open-source and available for free use in any Roblox game. You can modify and distribute it under the MIT License.
+
+---
