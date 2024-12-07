@@ -70,7 +70,7 @@ GlowEffect.ApplyGlowEffect(myFrame, {
     MinTransparency = 0.2,
     MaxTransparency = 0.7
 })
-
+```
 
 ## Notes
 - The glow effect will automatically reset the element's original properties (size, transparency, color) after each cycle.
