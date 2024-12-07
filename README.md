@@ -55,14 +55,14 @@ GlowEffect.ApplyGlowEffect(myImageLabel, {
 
 Here are the available configuration options you can modify when applying the glow effect:
 ```lua
-- *GrowMultiplier* (default: 1.2): Controls how much the element should grow during the effect. The higher the value, the more it will grow.
-- *GrowTime* (default: 0.6): Duration of the growing phase.
-- *ShrinkTime* (default: 0.6): Duration of the shrinking phase.
-- *RepeatCount* (default: -1): How many times the effect should repeat. Use -1 for infinite repetition.
-- *DelayBetween* (default: 0.2): Time to wait between each cycle.
-- *GlowColor* (default: Color3.new(1, 1, 1)): Color of the glow effect. Default is white.
-- *MinTransparency* (default: 0.3): The minimum transparency of the element during the glow effect.
-- *MaxTransparency *(default: 1): The maximum transparency during the fading part of the effect.
+- GrowMultiplier (default: 1.2): Controls how much the element should grow during the effect. The higher the value, the more it will grow.
+- GrowTime (default: 0.6): Duration of the growing phase.
+- ShrinkTime (default: 0.6): Duration of the shrinking phase.
+- RepeatCount (default: -1): How many times the effect should repeat. Use -1 for infinite repetition.
+- DelayBetween (default: 0.2): Time to wait between each cycle.
+- GlowColor (default: Color3.new(1, 1, 1)): Color of the glow effect. Default is white.
+- MinTransparency (default: 0.3): The minimum transparency of the element during the glow effect.
+- MaxTransparency (default: 1): The maximum transparency during the fading part of the effect.
 ```
 ## Example Use Case
 If you want a Frame to pulse with a white glow that grows larger, fades out, disappears, and then comes back for a total of 5 cycles, you would use:
