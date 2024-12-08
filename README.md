@@ -1,4 +1,4 @@
-# VisualGlowEffect
+# VisualTweens
 ---
 This is a flexible and user-friendly Lua module created for implementing glowing and pulsing effects on `Frame` and `ImageLabel` UI elements in Roblox. The module allows you to apply visually striking glow effects that expand and fade over time. You can fully customize settings such as color, transparency, and the number of repetitions to achieve the desired look.
 
@@ -25,18 +25,19 @@ To use this module, you can simply add it to `ReplicatedStorage` or any other se
 Once added, you can easily require the module in your scripts like so:
 
 ```lua
-local GlowEffect = require(game.ReplicatedStorage.VisualGlowEffect)
+local GlowEffect = require(game.ReplicatedStorage.VisualTweens)
 ```
 ---
 ## Usage
 You can apply the glow effect to any Frame or ImageLabel UI element using the ApplyGlowEffect function. Here's how:
 ```lua
-local GlowEffect = require(game.ReplicatedStorage.VisualGlowEffect)
+local VisualTweens = require(game.ReplicatedStorage.VisualTweens)
 local myFrame = script.Parent.MYFrame
 local ImageLabel = script.Parent.ImageLabel
+local button = script.Parent.TextButton
 
 -- Apply the effect to a Frame
-GlowEffect.ApplyGlowEffect(myFrame, {
+VisualTweens.ApplyGlowEffect(myFrame, {
     GrowMultiplier = 1.5,  -- Size multiplier for the glow effect
     GrowTime = 0.3,        -- Duration for the growing animation
     ShrinkTime = 0.3,      -- Duration for the shrinking animation
@@ -48,7 +49,7 @@ GlowEffect.ApplyGlowEffect(myFrame, {
 })
 
 -- Apply the effect to an ImageLabel
-GlowEffect.ApplyGlowEffect(myImageLabel, {
+VisualTweens.ApplyGlowEffect(myImageLabel, {
     GrowMultiplier = 1.3,
     GrowTime = 0.4,
     ShrinkTime = 0.4,
@@ -58,11 +59,45 @@ GlowEffect.ApplyGlowEffect(myImageLabel, {
     MinTransparency = 0.3,
     MaxTransparency = 1
 })
+
+-- Apply Button Effect to an button
+VisualTweens.ApplyBounceEffect(button, {
+	BounceScale = 1.2,
+	BounceTime = 0.15,
+	HoverOnly = true 
+})
+
+-- Apply hover effect
+VisualTweens.ApplyHoverHighlight(button, {
+    GrowMultiplier = 1.2,
+    FadeTransparency = 0.7,
+    TransitionTime = 0.3
+})
+
+-- Grows Slighly effect
+VisualTweens.ApplyHoverPulse(button, {
+    GlowTime = 0.5,
+    MinTransparency = 0.4
+})
+
+-- Apply Shrink effect
+VisualTweens.ApplyClickShrink(button, {
+    ShrinkScale = 0.8,
+    ShrinkTime = 0.1
+})
+
+-- Apply Click Glow effect
+VisualTweens.ApplyClickGlow(button, {
+    GlowColor = Color3.new(0, 1, 0),
+    GlowTime = 0.15,
+    MinTransparency = 0.5
+})
+
 ```
 ---
 ## Configuration Options
 
-Here are the available configuration options you can modify when applying the glow effect:
+Here are the available configuration options you can modify when applying the Visual Tweens:
 ```lua
 - GrowMultiplier (default: 1.2): Controls how much the element should grow during the effect. The higher the value, the more it will grow.
 - GrowTime (default: 0.6): Duration of the growing phase.
@@ -72,6 +107,24 @@ Here are the available configuration options you can modify when applying the gl
 - GlowColor (default: Color3.new(1, 1, 1)): Color of the glow effect. Default is white.
 - MinTransparency (default: 0.3): The minimum transparency of the element during the glow effect.
 - MaxTransparency (default: 1): The maximum transparency during the fading part of the effect.
+
+-- Glow
+- GlowColor = Color3.new(0, 1, 0),
+- GlowTime = 0.15,
+- MinTransparency = 0.5
+
+-- Shrink
+- ShrinkScale = 0.8,
+- ShrinkTime = 0.1
+
+-- glow
+- GlowTime = 0.5,
+- MinTransparency = 0.4
+
+-- Grow
+- GrowMultiplier = 1.2,
+- FadeTransparency = 0.7,
+- TransitionTime = 0.3
 ```
 ---
 ## Example Use Case
