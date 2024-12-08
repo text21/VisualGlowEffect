@@ -7,7 +7,7 @@ local VisualTweens = {}
 local function validateUIElement(uiElement)
     if not uiElement or
         not (uiElement:IsA("ImageLabel") or uiElement:IsA("Frame") or uiElement:IsA("TextButton") or
-            uiElement:IsA("TextLabel")) then
+            uiElement:IsA("TextLabel")) or uiElement:IsA("ImageButton") then
         error("VisualEffects module only supports ImageLabels, Frames, TextButtons, and TextLabels", 2)
     end
 end
